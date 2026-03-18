@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasySyntax - Vibe Coding & AI Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'xs': '16px', 
+                        'sm': '16px',
+                        'base': '16px',
+                    },
+                    colors: {
+                        brandBlue: '#3B82F6',
+                        brandBlueDark: '#1D4ED8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .btn-flat {
+            position: relative;
+            transition: all 0.1s ease;
+            border-bottom-width: 6px;
+        }
+        .btn-flat:active {
+            transform: translateY(4px);
+            border-bottom-width: 2px;
+        }
+        .card-flat {
+            border-bottom-width: 8px;
+        }
+    </style>
+</head>
+<body class="bg-[#F0F7FF] text-slate-900 font-sans text-base antialiased">
+
+    <div class="bg-indigo-600 text-white py-3 text-center font-bold tracking-wide">
+        ✨ Join 5,000+ Students Learning AI Today! <a href="#" class="underline ml-2 hover:text-yellow-300 transition-all">Claim Discount ⚡</a>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-4 border-slate-200 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-black text-xl border-b-4 border-indigo-900">ES</div>
+                <div class="text-2xl font-extrabold text-slate-900 tracking-tighter">Easy<span class="text-indigo-600">Syntax</span></div>
+            </div>
+            <div class="hidden md:flex space-x-10 font-bold text-slate-600 uppercase tracking-wider">
+                <a href="#hero" class="hover:text-indigo-600 transition-colors">Vibe</a>
+                <a href="#courses" class="hover:text-indigo-600 transition-colors">Courses</a>
+                <a href="#ai" class="hover:text-indigo-600 transition-colors">AI Lab</a>
+            </div>
+            <a href="#" class="btn-flat bg-brandBlue border-brandBlueDark text-white px-8 py-3 rounded-2xl font-extrabold uppercase">Daftar</a>
+        </div>
+    </nav>
+
+    <section id="hero" class="py-24 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-10 left-10 animate-bounce text-4xl opacity-20">🚀</div>
+        <div class="absolute bottom-10 right-10 animate-pulse text-4xl opacity-20">🤖</div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-indigo-600 font-black uppercase tracking-[0.2em] mb-4">Vibe Coding & AI Courses</h2>
+            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tighter text-slate-900">
+                Coding Jadi <span class="bg-yellow-300 px-4">Santuy</span> Dengan AI.
+            </h1>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto font-semibold leading-relaxed">
+                Belajar sintaksis tanpa pusing. Kuasai Tech Stack modern dan manfaatkan AI untuk bangun produk impianmu lebih cepat.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <button class="btn-flat bg-indigo-600 border-indigo-900 text-white px-12 py-5 rounded-[2rem] text-xl font-black">Mulai Belajar ⚡</button>
+                <button class="btn-flat bg-white border-slate-300 text-slate-700 px-12 py-5 rounded-[2rem] text-xl font-black">Lihat Kurikulum</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-24 bg-white border-y-8 border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-black text-slate-900 mb-4">Pilih Skill Level-Up Kamu</h2>
+                    <p class="text-lg text-slate-500 font-bold">Kurikulum yang dirancang untuk masa depan yang serba AI.</p>
+                </div>
+                <div class="text-indigo-600 font-black text-lg underline decoration-4 underline-offset-8">Explore All 12+ Classes →</div>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="card-flat bg-violet-50 p-10 rounded-[3rem] border-4 border-violet-200">
+                    <div class="bg-violet-600 w-16 h-16 rounded-2xl mb-8 flex items-center justify-center text-white text-3xl font-bold border-b-4 border-violet-900">
+                        🤖
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">AI Engineering</h3>
+                    <p class="text-slate-600 mb-8 font-semibold leading-relaxed">Cara "ngobrol" dengan AI untuk auto-generate code, debugging, dan dokumentasi.</p>
+                    <button class="btn-flat bg-violet-600 border-violet-900 text-white w-full py-4 rounded-2xl font-black uppercase">Level Up!</button>
+                </div>
+
+                <div class="card-flat bg-sky-50 p-10 rounded-[3rem] border-4 border-sky-200">
+                    <div class="bg-brandBlue w-16 h-16 rounded-2xl mb-8 flex items-center justify-center text-white text-3xl font-bold border-b-4 border-brandBlueDark text-white">
+                        <span class="mb-1">{}</span>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">Fullstack Vibe</h3>
+                    <p class="text-slate-600 mb-8 font-semibold leading-relaxed">Bangun web app dari nol sampai deployment menggunakan Next.js & Supabase.</p>
+                    <button class="btn-flat bg-brandBlue border-brandBlueDark text-white w-full py-4 rounded-2xl font-black uppercase">Level Up!</button>
+                </div>
+
+                <div class="card-flat bg-rose-50 p-10 rounded-[3rem] border-4 border-rose-200">
+                    <div class="bg-rose-500 w-16 h-16 rounded-2xl mb-8 flex items-center justify-center text-white text-3xl font-bold border-b-4 border-rose-800">
+                        ✨
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">Visual Aesthetics</h3>
+                    <p class="text-slate-600 mb-8 font-semibold leading-relaxed">Belajar desain yang punya 'vibe' lewat Figma dan integrasi aset AI Generative.</p>
+                    <button class="btn-flat bg-rose-500 border-rose-800 text-white w-full py-4 rounded-2xl font-black uppercase">Level Up!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+  
+  <section id="typography-docs" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="mb-16 border-l-8 border-indigo-600 pl-6">
+            <h2 class="text-5xl font-black text-slate-900 tracking-tighter uppercase">Typography System</h2>
+            <p class="text-xl text-slate-500 font-bold mt-2">Font Family: <span class="text-indigo-600">"Plus Jakarta Sans"</span></p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div class="space-y-12">
+                <div>
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-indigo-500 mb-4">01. Hero Display</p>
+                    <h1 class="text-6xl font-black tracking-tighter leading-none text-slate-900">The Quick Brown Fox.</h1>
+                    <p class="mt-4 text-slate-400 font-mono text-sm uppercase font-bold tracking-widest">Size: 6xl / Weight: 800 / Leading: [1.1]</p>
+                </div>
+
+                <div>
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-indigo-500 mb-4">02. Section Heading</p>
+                    <h2 class="text-4xl font-black tracking-tight text-slate-900">Jumps Over The Lazy Dog.</h2>
+                    <p class="mt-4 text-slate-400 font-mono text-sm uppercase font-bold tracking-widest">Size: 4xl / Weight: 700 / Leading: Relaxed</p>
+                </div>
+
+                <div>
+                    <p class="text-xs font-black uppercase tracking-[0.2em] text-indigo-500 mb-4">03. Body Paragraph</p>
+                    <p class="text-xl text-slate-600 font-semibold leading-relaxed">
+                        Belajar sintaksis tanpa pusing. Kuasai Tech Stack modern dan manfaatkan AI untuk bangun produk impianmu lebih cepat.
+                    </p>
+                    <p class="mt-4 text-slate-400 font-mono text-sm uppercase font-bold tracking-widest">Size: base (16px) / Weight: 600 / Color: Slate-600</p>
+                </div>
+            </div>
+
+            <div class="card-flat bg-indigo-50 border-4 border-indigo-200 p-8 rounded-[2rem]">
+                <h3 class="text-2xl font-black mb-6 text-indigo-900">Typographic Rules</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-black shrink-0 border-b-4 border-indigo-900">1</div>
+                        <div>
+                            <p class="font-black text-slate-900 uppercase tracking-tight">Tight Tracking</p>
+                            <p class="text-slate-600 font-semibold">Gunakan <code class="bg-white px-1 border border-slate-200">tracking-tighter</code> pada judul besar untuk kesan "vibe" yang padat.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-black shrink-0 border-b-4 border-indigo-900">2</div>
+                        <div>
+                            <p class="font-black text-slate-900 uppercase tracking-tight">Semi-Bold Body</p>
+                            <p class="text-slate-600 font-semibold">Hindari font-weight normal (400). Gunakan minimal <code class="bg-white px-1 border border-slate-200">font-semibold</code> agar teks tetap terbaca di atas warna cerah.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-indigo-600 text-white w-8 h-8 rounded-lg flex items-center justify-center font-black shrink-0 border-b-4 border-indigo-900">3</div>
+                        <div>
+                            <p class="font-black text-slate-900 uppercase tracking-tight">Highlight Emphasis</p>
+                            <p class="text-slate-600 font-semibold">Gunakan <span class="bg-yellow-300 px-2 border border-black italic">background yellow</span> untuk menekankan kata kunci utama dalam paragraf.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  
+  
+  
+  <section id="components-showcase" class="py-24 bg-[#F0F7FF] border-t-8 border-slate-100">
+    <div class="container mx-auto px-6">
+        <div class="mb-16">
+            <h2 class="text-5xl font-black text-slate-900 tracking-tighter uppercase">Component <span class="text-brandBlue">Library</span></h2>
+            <p class="text-lg text-slate-500 font-bold mt-2">Koleksi UI kit dengan vibe Neo-brutalism untuk EasySyntax.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            
+            <div class="space-y-10">
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-tight">Buttons & Groups</h3>
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <button class="btn-flat bg-brandBlue border-brandBlueDark text-white px-6 py-2 rounded-xl font-bold">Primary</button>
+                        <button class="btn-flat bg-rose-500 border-rose-800 text-white px-6 py-2 rounded-xl font-bold">Danger</button>
+                        <div class="inline-flex">
+                            <button class="btn-flat bg-white border-slate-300 px-4 py-2 rounded-l-xl font-bold border-r-2">Left</button>
+                            <button class="btn-flat bg-white border-slate-300 px-4 py-2 font-bold border-x-2">Mid</button>
+                            <button class="btn-flat bg-white border-slate-300 px-4 py-2 rounded-r-xl font-bold border-l-2">Right</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-tight">Alerts & Badges</h3>
+                    <div class="space-y-4">
+                        <div class="bg-emerald-100 border-4 border-emerald-500 p-4 rounded-2xl font-bold text-emerald-800 flex justify-between items-center">
+                            <span>✨ Success! Modul AI Engineering terbuka.</span>
+                            <button class="hover:rotate-90 transition-transform font-black">✕</button>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="px-4 py-1 bg-indigo-600 text-white rounded-full font-black text-xs uppercase border-2 border-indigo-900">New</span>
+                            <span class="px-4 py-1 bg-yellow-300 text-slate-900 rounded-full font-black text-xs uppercase border-2 border-slate-900">Trending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-tight">Progress & Loading</h3>
+                    <div class="space-y-6">
+                        <div class="w-full bg-slate-200 rounded-full h-6 border-2 border-slate-900 overflow-hidden">
+                            <div class="bg-brandBlue h-full border-r-4 border-brandBlueDark" style="width: 65%"></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-8 h-8 border-4 border-slate-200 border-t-brandBlue rounded-full animate-spin"></div>
+                            <span class="font-bold text-slate-500 italic text-sm">Generating Vibe...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-10">
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-tight">Accordion</h3>
+                    <div class="border-4 border-slate-900 rounded-2xl overflow-hidden shadow-[4px_4px_0px_0px_rgba(15,23,42,1)]">
+                        <div class="bg-slate-900 text-white p-4 font-bold flex justify-between items-center cursor-pointer">
+                            Apa itu Vibe Coding?
+                            <span>↓</span>
+                        </div>
+                        <div class="p-4 bg-white font-semibold text-slate-600 border-t-4 border-slate-900">
+                            Gaya coding yang mengutamakan intuisi dan bantuan AI untuk mempercepat proses kreatif.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-tight">Navigation & Tabs</h3>
+                    <nav class="flex mb-6 text-sm font-bold text-slate-500 uppercase tracking-wider">
+                        <a href="#" class="hover:text-brandBlue">Course</a>
+                        <span class="mx-2">/</span>
+                        <a href="#" class="text-slate-900 italic">React Basics</a>
+                    </nav>
+                    <div class="flex border-b-4 border-slate-100 gap-8">
+                        <button class="pb-2 border-b-4 border-indigo-600 text-indigo-600 font-black">Description</button>
+                        <button class="pb-2 text-slate-400 font-black hover:text-slate-600">Curriculum</button>
+                        <button class="pb-2 text-slate-400 font-black hover:text-slate-600">Reviews</button>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-tight">Module List</h3>
+                    <div class="space-y-2">
+                        <div class="p-4 bg-slate-50 border-2 border-slate-200 rounded-xl font-bold flex items-center gap-3 hover:border-brandBlue cursor-pointer transition-colors">
+                            <span class="w-6 h-6 bg-brandBlue text-white rounded flex items-center justify-center text-xs">1</span>
+                            Intro to Prompt Engineering
+                        </div>
+                        <div class="p-4 bg-slate-50 border-2 border-slate-200 rounded-xl font-bold flex items-center gap-3 opacity-50">
+                            <span class="w-6 h-6 bg-slate-400 text-white rounded flex items-center justify-center text-xs">2</span>
+                            Advanced RAG System 🔒
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <section id="forms-showcase" class="py-24 bg-white border-t-8 border-slate-100">
+    <div class="container mx-auto px-6">
+        <div class="mb-16">
+            <h2 class="text-5xl font-black text-slate-900 tracking-tighter uppercase">Form <span class="text-indigo-600">Controls</span></h2>
+            <p class="text-lg text-slate-500 font-bold mt-2">Input data dengan style yang tegas dan fungsional.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            
+            <div class="space-y-10">
+                <div class="card-flat bg-slate-50 p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase">Basic Inputs</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-black uppercase mb-2">Username</label>
+                            <input type="text" placeholder="e.g. vibe_coder" class="w-full bg-white border-4 border-slate-900 p-4 rounded-xl font-bold focus:ring-4 focus:ring-yellow-300 outline-none transition-all placeholder:text-slate-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-black uppercase mb-2">Email Address</label>
+                            <input type="email" placeholder="hello@easysyntax.com" class="w-full bg-white border-4 border-slate-900 p-4 rounded-xl font-bold focus:ring-4 focus:ring-brandBlue outline-none transition-all">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase">Input Group & Floating</h3>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <span class="bg-slate-900 text-white px-4 py-4 border-4 border-slate-900 rounded-l-xl font-black">https://</span>
+                            <input type="text" placeholder="portfolio.com" class="w-full border-y-4 border-r-4 border-slate-900 p-4 rounded-r-xl font-bold outline-none focus:bg-indigo-50">
+                        </div>
+                        
+                        <div class="relative mt-4">
+                            <input type="text" id="floating_input" name="floating_input" placeholder=" " class="peer w-full bg-white border-4 border-slate-900 p-4 rounded-xl font-bold pt-6 outline-none focus:ring-4 focus:ring-yellow-300">
+                            <label for="floating_input" class="absolute left-4 top-1 text-xs font-black uppercase text-slate-400 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-1 peer-focus:text-xs peer-focus:text-indigo-600">Password</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase">Range Selection</h3>
+                    <label class="block text-sm font-black uppercase mb-4">Skill Level (0-100)</label>
+                    <input type="range" class="w-full h-4 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600 border-2 border-slate-900">
+                </div>
+            </div>
+
+            <div class="space-y-10">
+                <div class="card-flat bg-indigo-50 p-8 rounded-3xl border-4 border-indigo-200">
+                    <h3 class="text-xl font-black mb-6 uppercase">Selectors</h3>
+                    <div class="space-y-6">
+                        <select class="w-full bg-white border-4 border-slate-900 p-4 rounded-xl font-bold outline-none appearance-none cursor-pointer focus:bg-yellow-50">
+                            <option>Pick a Track</option>
+                            <option>AI Engineering</option>
+                            <option>Fullstack Vibe</option>
+                        </select>
+
+                        <div class="flex flex-wrap gap-8">
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <div class="relative w-6 h-6 border-4 border-slate-900 rounded bg-white group-hover:bg-yellow-300 transition-colors">
+                                    <input type="checkbox" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                                    <div class="hidden peer-checked:block text-center font-black leading-none mt-[-2px]">✓</div>
+                                </div>
+                                <span class="font-bold">Remind Me</span>
+                            </label>
+
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <div class="relative w-6 h-6 border-4 border-slate-900 rounded-full bg-white group-hover:bg-brandBlue transition-colors">
+                                    <input type="radio" name="plan" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                                    <div class="hidden peer-checked:block w-2 h-2 bg-slate-900 rounded-full mx-auto mt-[3px]"></div>
+                                </div>
+                                <span class="font-bold">Pro Plan</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-white p-8 rounded-3xl border-4 border-slate-200">
+                    <h3 class="text-xl font-black mb-6 uppercase">Validation</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="text" value="Salah ketik nih" class="w-full border-4 border-rose-500 p-4 rounded-xl font-bold bg-rose-50 outline-none">
+                            <p class="text-rose-600 text-sm font-black mt-2 uppercase italic">⚠ Error: Format tidak valid!</p>
+                        </div>
+                        <div>
+                            <input type="text" value="Diterima" class="w-full border-4 border-emerald-500 p-4 rounded-xl font-bold bg-emerald-50 outline-none">
+                            <p class="text-emerald-600 text-sm font-black mt-2 uppercase italic">✓ Berhasil: Username tersedia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-flat bg-slate-900 p-8 rounded-3xl border-4 border-slate-700">
+                    <h3 class="text-xl font-black mb-6 uppercase text-white">Quick Submit</h3>
+                    <div class="flex gap-4">
+                        <input type="text" placeholder="Newsletter..." class="flex-1 p-4 rounded-xl font-bold outline-none border-b-4 border-indigo-500">
+                        <button class="bg-indigo-600 text-white px-6 py-4 rounded-xl font-black border-b-4 border-indigo-900 active:translate-y-1 active:border-b-0 transition-all uppercase">Join</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <footer class="bg-slate-900 text-white py-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="text-3xl font-black tracking-tighter mb-6 uppercase">Easy<span class="text-indigo-400">Syntax</span></div>
+                <p class="text-slate-400 font-bold max-w-sm leading-relaxed mb-8 text-base">
+                    Platform belajar coding yang nggak bikin stres. Fokus pada hasil, bukan cuma teori yang bikin ngantuk.
+                </p>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border-b-4 border-slate-700">IG</div>
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border-b-4 border-slate-700">YT</div>
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border-b-4 border-slate-700">TW</div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 font-bold">
+                <span class="text-indigo-400 uppercase tracking-widest text-base">Quick Links</span>
+                <a href="#" class="hover:text-indigo-400">Join Community</a>
+                <a href="#" class="hover:text-indigo-400">Free Workshop</a>
+                <a href="#" class="hover:text-indigo-400">AI Toolings</a>
+            </div>
+            <div class="flex flex-col gap-4 font-bold">
+                <span class="text-indigo-400 uppercase tracking-widest text-base">Support</span>
+                <a href="#" class="hover:text-indigo-400">Help Center</a>
+                <a href="#" class="hover:text-indigo-400">Partnership</a>
+                <a href="#" class="hover:text-indigo-400">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="container mx-auto mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 font-bold uppercase tracking-widest text-base">
+            &copy; 2026 EasySyntax. Let's make it simple.
+        </div>
+    </footer>
+
+</body>
+</html>
